@@ -1,0 +1,33 @@
+.custom-toast {
+  min-height: 3vw !important;
+  width: 18vw ;
+  padding: 0.8vw !important;
+  background: rgba(255, 255, 255, 0.15) !important;
+  backdrop-filter: blur(1vw) !important;
+  -webkit-backdrop-filter: blur(1vw) !important;
+  box-shadow: 0 0.5vw 2vw rgba(0, 0, 0, 0.2) !important;
+  color: rgb(200, 200, 200);
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  font-size: 0.9vw;
+  font-family: 'Poppins';
+}
+.custom-toast-body {
+  font-size: 0.9vw !important;
+  color: white !important;
+  text-align: left !important;
+  margin-left: 0.5vw;
+}
+@media(max-width:500px){
+  .custom-toast {
+    width: 70vw;
+    height: 10vw;
+    font-size: 3.5vw;
+  }
+  .custom-toast-body {
+    font-size: 3.5vw;
+    padding: 2vw 3vw;
+  }
+  
+}

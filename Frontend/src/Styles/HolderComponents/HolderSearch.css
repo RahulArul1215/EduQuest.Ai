@@ -1,0 +1,350 @@
+.holder-search-container-placer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    height: 5vw;
+    position: absolute;
+    box-sizing: border-box;
+    bottom: 1vw;
+        transition: left 0.35s ease;
+}
+
+.holder-search-container {
+    width: 40vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.holder-search-input-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-radius: 3vw;
+    padding: 0vw 0vw 0vw 0.5vw; 
+    border: 0.01vw solid rgb(86, 86, 86);
+    border-image-slice: 1;
+}
+.holder-search-icon{
+    height: 1.5vw;
+}
+
+.holder-search-input-field {
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-family: 'Poppins';
+    padding: 0.9vw;
+    font-size: 1vw;
+    color: #fff;
+    border-radius: 2vw;
+    padding-left: 0.5vw;
+}
+
+.holder-search-input-field::placeholder {
+    color: #aaa;
+}
+
+.holder-search-send-btn {
+    background-color: transparent;
+    border: none;
+    /* margin-left: 0.5vw; */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.holder-search-send-btn-img {
+    width: 1.1vw;
+    height: 1.1vw;
+}
+.holder-search-send-btn-img:hover{
+      transform: scale(1.08);   /* Slight magnification */
+}
+.holder-search-sendog-btn-img{
+    width: 2.5vw;
+    height: 2.5vw;
+    margin-left: -0.5vw;
+}
+.holder-search-sendog-btn-img:hover{
+      transform: scale(1.03);   /* Slight magnification */
+
+}
+
+.holder-search-voice-btn-img{
+  width: 1.8vw;
+  margin: 0;
+}
+
+.Holder_search_upload_modal_overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  /* backdrop-filter: blur(1vw);
+  background: rgba(0, 0, 0, 0.45); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.Holder_search_upload_modal {
+  width: 30vw;
+  height: 15vw;
+  border-radius: 1.2vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2vw;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(1.2vw);
+  border: 0.1vw solid rgba(166, 166, 166, 0.25);
+  animation: Holder_search_upload_pop 0.25s ease-out;
+}
+.Model-Upload-Icon{
+    height: 4vw;
+    margin-top: 1vw;
+}
+.holder-search-voice-btn-img:hover {
+    transform: scale(1.08);  
+}
+
+@keyframes Holder_search_upload_pop {
+  from {
+    opacity: 0;
+    transform: scale(0.88);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Title */
+.Holder_search_upload_title {
+    font-family: 'Montserrat';
+    font-weight: 300;
+    color: white;
+    font-size: 1.2vw;
+    margin-bottom: 1.5vw;
+}
+
+/* Upload Box */
+.Holder_search_upload_box {
+  width: 100%;
+  height: 15vw;
+  border-radius: 1vw;
+  border: 0.1vw solid rgba(166, 166, 166, 0.25);
+  background: rgba(255, 255, 255, 0.02);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.Holder_search_upload_text {
+  font-size: 1.2vw;
+  color: white;
+}
+
+.Holder_search_upload_or {
+  color: white;
+  font-size: 1vw;
+}
+.Holder_search_upload_submit_btn{
+  padding: 0.3vw 1vw;
+  margin-top: 0.7vw;
+  border-radius: 1vw;
+  border: none;
+  font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 0.9vw;
+}
+
+/* Browse Button */
+.Holder_search_upload_browse_btn {
+    margin-top: 0.8vw;
+    padding: 0.5vw 1.5vw;
+    border: none;
+    border-radius: 3vw;
+    background: white;
+    color: #2C2638;
+    font-size: 1vw;
+    cursor: pointer;
+    transition: 0.25s ease;
+    margin-bottom: 1vw;
+    font-family: 'Poppins';
+    font-weight: 400;
+}
+
+.Holder_search_upload_browse_btn:hover {
+  transform: scale(1.05);
+}
+
+
+.holder-search-doc-badge {
+  position: absolute;
+  top: 5.7vw;
+  right: 1vw;
+    background-color: #2e2e3a;
+    padding: 0.4vw 0.8vw;
+    border-radius: 0.6vw;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6vw;
+    margin-left: 1.6vw;
+    font-family: 'Poppins';
+    font-size: 0.85vw;
+    color: white;
+    border: 1px solid #565670;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.holder-search-doc-remove {
+    cursor: pointer;
+    padding: 0.2vw 0.45vw;
+    border-radius: 0.4vw;
+    background: #444;
+    font-size: 0.75vw;
+    transition: 0.2s;
+}
+
+.holder-search-doc-remove:hover {
+    background: #ff4b4b;
+}
+.voice-popup {
+    position: fixed;
+   top: 9vw;
+   right: 1vw;
+    width: fit-content;
+    padding: 0.5vw 1.5vw;
+    border-radius: 0.5vw;
+    backdrop-filter: blur(1vw);
+    -webkit-backdrop-filter: blur(1vw);
+    background: rgba(255, 255, 255, 0.12);
+    border: 0.1vw solid rgba(255, 255, 255, 0.25);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9vw;
+    box-shadow: 0 0.6vw 1.2vw rgba(0, 0, 0, 0.25);
+    animation: popupFade 0.3s ease-out;
+    z-index: 999999;
+}
+
+/* Fade-in animation */
+@keyframes popupFade {
+    from {
+        transform: translateY(-1vw); /* start slightly above */
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0vw);  /* end in normal place */
+        opacity: 1;
+    }
+}
+
+@media(max-width:500px){
+  .holder-search-container-placer{
+    /* width: 100%; */
+  }
+  .holder-search-input-wrapper{
+    border-radius: 10vw;
+  }
+  .holder-search-container{
+    margin-bottom: 10vw;
+    width: 60vw;
+  }
+  .holder-search-input-field {
+    width: 30vw;
+    font-size: 3.5vw;
+  }
+  .holder-search-send-btn-img {
+    width: 4.1vw;
+    height: 4.1vw;
+}
+.holder-search-sendog-btn-img{
+    width: 9.5vw;
+    height: 9.5vw;
+    margin-left: -2vw;
+}
+.holder-search-sendog-btn-img:hover{
+      transform: scale(1.08);   /* Slight magnification */
+
+}
+
+.holder-search-voice-btn-img{
+  width: 6.8vw;
+  margin: 0;
+}
+ /* 🌟 When sidebar is OPEN */
+    .sidebar-open .holder-search-container {
+        width: 61vw !important;
+        margin-left: -2vw !important;
+    }
+
+    /* 🌟 When sidebar is COLLAPSED */
+    .sidebar-collapsed .holder-search-container {
+        width: 85vw !important;
+        margin-left: -19vw !important;
+    }
+
+    /* Input wrapper width (both states) */
+    .holder-search-input-wrapper {
+        width: 310px !important;
+    }
+    .Holder_search_upload_modal{
+      width: 70vw;
+      height: 50vw;
+      border-radius: 3vw;
+    }
+    .Holder_search_upload_title{
+      font-size: 4vw;
+      margin-bottom: 2vw;
+    }
+    .Holder_search_upload_box{
+      height: 35vw;
+      border-radius: 3vw;
+    }
+    .Model-Upload-Icon{
+      height: 10vw;
+    }
+    .Holder_search_upload_text{
+      font-size: 3.5vw;
+    }
+    .Holder_search_upload_or{
+      font-size: 3vw;
+    }
+    .Holder_search_upload_browse_btn{
+      font-size: 3vw;
+      padding: 2vw 4vw;
+      border-radius: 5vw;
+    }
+    .Holder_search_upload_submit_btn{
+      font-size: 3vw;
+      padding: 2vw 4vw;
+      margin-top: 2vw;
+      border-radius: 5vw;
+    }
+    .holder-search-doc-badge {
+      top: 15vw;
+      right: 4vw;
+      font-size: 3vw;
+      font-family: 'Poppins';
+    }
+    .holder-search-doc-remove {
+      cursor: pointer;
+      padding: 0.2vw 0.45vw;
+      border-radius: 0.4vw;
+      background: #444;
+      font-size: 2.5vw;
+      transition: 0.2s;
+      font-family: 'Poppins';
+}
+
+}

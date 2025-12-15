@@ -1,0 +1,106 @@
+.Chat-Container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 35vw;
+    padding: 2vw 3vw;
+    box-sizing: border-box;
+    overflow-y: auto;
+    font-family: 'Poppins';
+    font-weight: 300;
+    color: white;
+    font-size: 0.95vw;
+}
+
+.Chat-Container::-webkit-scrollbar {
+    width: 0.2vw; /* Thin scrollbar */
+}
+
+.Chat-Container::-webkit-scrollbar-track {
+    background: transparent; /* No track background */
+}
+
+.Chat-Container::-webkit-scrollbar-thumb {
+    background-color: white; /* Scrollbar color */
+    border-radius: 10px; /* Rounded edges */
+}
+
+/* Remove arrows (they usually appear in IE, old Edge) */
+.Chat-Container::-webkit-scrollbar-button {
+    display: none;
+}
+
+.marksman {
+  color: white;
+  padding: 1.2vw 1.5vw;
+  border-radius: 1vw;
+  display: block;
+  white-space: normal;
+  line-height: 1.6;
+}
+
+.marksman h1, 
+.marksman h2, 
+.marksman h3 {
+  margin: 1vw 0 0.8vw 0;
+  font-weight: 600;
+}
+
+.marksman p {
+  margin: 0.5vw 0;
+  font-weight: 300;
+  text-align: justify;
+}
+.glass-user {
+  background: rgba(133, 133, 133, 0.15);
+  backdrop-filter: blur(1.2vw);
+  -webkit-backdrop-filter: blur(1.2vw);
+  border-radius: 0.5vw;
+  padding: 0.5vw 1vw;
+  width: fit-content;
+  max-width: 70%;
+  margin-bottom: -1.5vw;
+  border: 0.1vw solid rgba(27, 27, 27, 0.25);
+}
+.Chat-Container-hrline{
+    height: 0.01vw;
+    width: 100%;
+    background-color: aliceblue;
+}
+.user-start-separator {
+    width: 100%;
+    margin: 2vw auto 1vw auto;
+    border: 0;
+    border-top: 0.01vw solid rgba(179, 178, 178, 0.25);
+}
+
+
+
+@media(max-width:500px){
+.Chat-Container {
+      height: 150vw;
+      font-size: 3.4vw;  
+      padding: 4vw 2vw;  
+  }
+
+  .marksman {
+      padding: 3vw 4vw;
+      border-radius: 3vw;
+      line-height: 1.8;
+  }
+
+  .marksman h1,
+  .marksman h2,
+  .marksman h3 {
+      margin: 3vw 0 2vw 0;
+      font-size: 4.2vw;     
+  }
+
+  .marksman p {
+      margin: 2vw 0;
+      font-size: 3.4vw;     
+  }
+  .glass-user {
+        padding: 1vw 2vw;
+    }
+}
