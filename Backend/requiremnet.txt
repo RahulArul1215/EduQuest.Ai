@@ -1,8 +1,15 @@
-Installed:
-1. pip install pdfplumber pytesseract pillow beautifulsoup4 requests faiss-cpu openai sentence-transformers tiktoken
-2.install Tessract in windows cmd and check
-3.Web_Url - BeautifulSoup
-4.Pdf - pdfplumber
-5.Image - pytesseract
-6.Embedding the text - model = SentenceTransformer("all-MiniLM-L6-v2")
-7.pip install python-multipart
+fastapi
+uvicorn
+python-multipart
+
+pdfplumber
+pytesseract
+Pillow
+beautifulsoup4
+requests
+
+sentence-transformers
+tiktoken
+openai
+
+psycopg2-binary
