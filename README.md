@@ -112,3 +112,18 @@ This project uses Tesseract OCR for extracting text from images.
 3. Verify installation:
    ```bash
    tesseract --version
+
+### Run Frontend & Backend 
+
+```bash
+#Frontend
+cd frontend
+npm install
+npm start
+
+#Backend
+cd backend
+pip install -r requirements.txt
+uvicorn main:app --reload
+
+
